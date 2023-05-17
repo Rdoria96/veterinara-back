@@ -9,6 +9,6 @@ public class Propietario {
     private String ident_p;
     private String nombre_p;
     private String apellido_p;
-    private int nmid_ciudad;
-    private String telefono;
+    private Ciudad ciudad;
+    private String telefono_p;
 }
