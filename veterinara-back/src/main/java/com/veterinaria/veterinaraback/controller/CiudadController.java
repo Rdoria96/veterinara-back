@@ -15,8 +15,6 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@Service
-@Transactional
 @RequestMapping("/api")
 public class CiudadController {
     @Autowired

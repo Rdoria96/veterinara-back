@@ -15,8 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Map;
 
-@Service
-@Transactional
+
 @RestController
 @RequestMapping("/api")
 public class PropietarioController {

@@ -15,8 +15,6 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@Transactional
-@Service
 @RequestMapping("/api")
 @CrossOrigin(origins = "http://localhost/80")
 public class PacienteController {
@@ -36,7 +34,6 @@ public class PacienteController {
                 mensaje.setCode("0");
                 mensaje.setMensaje("Se creo el paciente");
             }catch (ServicesException ex){
-                ex.printStackTrace();
                 mensaje.setCode("1");
                 mensaje.setMensaje("Error" + ex.getMessage());
                 throw  new RuntimeException(ex);
